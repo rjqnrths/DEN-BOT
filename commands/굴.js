@@ -31,6 +31,9 @@ const field27="허니컴 바다" //Honeycalm Sea
 const field28="챌린지로드" //Challenge Road
 const field29="워크아웃 바다" //Workout Sea
 const field30="원환의 만" //Loop Lagoon
+const field31="파이트케이브" //Brawlers' Cave
+const field32="허니컴섬" //Honeycalm Island
+
 exports.run = (client, message, args) => {   
          if (args == 1) {
             const Embed = new Discord.MessageEmbed()
@@ -42,7 +45,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n노보청" + "\n괴력몬" + "\n카포에라", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 2) {
@@ -55,7 +58,7 @@ exports.run = (client, message, args) => {
             { name: '실드', value: "\n란쿨루스" + "\n가디안", inline: true },
         )
         .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-        .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+        .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
         .setFooter(footerCred);       
     message.channel.send(Embed).catch(console.error);
     }    if (args == 3) {
@@ -68,7 +71,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n기가이어스" + "\n암팰리스" + "\n단단지", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 4) {
@@ -81,7 +84,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n전툴라" + "\n투구뿌논" + "\n아이앤트", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 5) {
@@ -94,7 +97,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n에리본" + "\n비퀸" + "\n이올브", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 6) {
@@ -107,7 +110,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n대로트" + "\n펌킨인" + "\n탱탱겔", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 7) {
@@ -120,7 +123,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n고래왕" + "\n갸라도스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 8) {
@@ -133,7 +136,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n깨비물거미" + "\n트리토돈" + "\n고래왕", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 9) {
@@ -146,7 +149,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n파르셀" + "\n두빅굴" + "\n가재장군", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 10) {
@@ -159,7 +162,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n이븐곰" + "\n케오퍼스" + "\n대여르", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 11) {
@@ -172,7 +175,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n절각참" + "\n기기기어르" + "\n대왕끼리동", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 12) {
@@ -185,7 +188,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n절각참" + "\n입치트" + "\n토게데마루", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 13) {
@@ -198,7 +201,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n심보러" + "\n이올브" + "\n브리무음", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 14) {
@@ -211,7 +214,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n마임꽁꽁" + "\n마자용", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 15) {
@@ -224,7 +227,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n기가이어스" + "\n롱스톤" + "\n거대코뿌리", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 16) {
@@ -237,7 +240,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n닥트리오" + "\n몰드류" + "\n만마드", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 17) {
@@ -250,7 +253,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n하마돈" + "\n사다이사" , inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 18) {
@@ -263,7 +266,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n다태우지네" + "\n앤티골" + "\n윈디", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 19) {
@@ -276,7 +279,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n코터스" + "\n샹델라" + "\n윈디", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 20) {
@@ -289,7 +292,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n다태우지네" + "\n석탄산" + "\n윈디", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 21) {
@@ -302,7 +305,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n파르셀" + "\n배바닐라" + "\n라프라스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 22) {
@@ -315,7 +318,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n맘모꾸리" + "\n모스노우" + "\n포푸니라", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 23) {
@@ -328,7 +331,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n모스노우" + "\n눈여아" + "\n빙큐보", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 24) {
@@ -341,7 +344,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n전툴라" + "\n라이츄", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 25) {
@@ -354,7 +357,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n찌르성게" + "\n토게데마루", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 26) {
@@ -367,7 +370,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n달코퀸" + "\n라플레시아" + "\n아르코", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 27) {
@@ -380,7 +383,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n백솜모카" + "\n엘풍" + "\n단지래플", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 28) {
@@ -393,7 +396,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n펌킨인" + "\n호바귀", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 29) {
@@ -406,7 +409,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n스컹탱크" + "\n더스트나" + "\n더시마사리", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 30) {
@@ -419,7 +422,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n로젤리아" + "\n스트린더" + "\n또도가스(가라르)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 31) {
@@ -432,7 +435,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n네이티오" + "\n버랜지나" + "\n심보러", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 32) {
@@ -445,7 +448,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n아머까오" + "\n루차불", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 33) {
@@ -458,7 +461,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n마셰이드" + "\n프레프티르" + "\n토게키스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 34) {
@@ -471,7 +474,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n마휘핑" + "\n날쌩마(가라르)" + "\n오롱털", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 35) {
@@ -484,7 +487,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n절각참" + "\n가재장군" + "\n깜까미", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 36) {
@@ -497,7 +500,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n버랜지나" + "\n가로막구리" + "\n마기라스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 37) {
@@ -510,7 +513,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n액스라이즈" + "\n할비롱" + "\n미끄래곤", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 38) {
@@ -523,7 +526,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n미끄래곤" + "\n단지래플" + "\n드래펄트", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 39) {
@@ -536,7 +539,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n일레도리자드" + "\n치라치노" + "\n이븐곰", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 40) {
@@ -549,7 +552,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n파르토" + "\n하랑우탄" + "\n잠만보", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 41) {
@@ -562,7 +565,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n두빅굴" + "\n꼬치조", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 42) {
@@ -575,7 +578,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n트리토돈" + "\n탱탱겔" + "\n갈가부기", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 43) {
@@ -588,7 +591,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n산호르곤" + "\n야느와르몽", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 44) {
@@ -601,7 +604,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n갸라도스" + "\n라프라스"+ "\n밀로틱", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 45) {
@@ -614,7 +617,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n강철톤" + "\n기기기어르"+ "\n루카리오"+"\n절각참", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 46) {
@@ -627,7 +630,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n깨비물거미" + "\n어지리더", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 47) {
@@ -640,7 +643,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n포트데스" + "\n산호르곤", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 48) {
@@ -653,7 +656,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n괴력몬" + "\n루차불"+ "\n루카리오"+"\n엘레이드", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 49) {
@@ -666,7 +669,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n나이킹" + "\n절각참"+ "\n메더(가라르)"+"\n대왕끼리동"+"\n두랄루돈", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 50) {
@@ -679,7 +682,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n브리무음" + "\n마임꽁꽁"+ "\n칼라마네로"+"\n가디안", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 51) {
@@ -692,7 +695,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n암팰리스" + "\n석탄산"+ "\n강철톤"+"\n마기라스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 52) {
@@ -705,7 +708,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 53) {
@@ -718,7 +721,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n윈디" + "\n염뉴트"+ "\n다태우지네"+"\n리자몽", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 54) {
@@ -731,7 +734,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n윈디" + "\n샹델라"+ "\n석탄산"+"\n염뉴트", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 55) {
@@ -744,7 +747,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n배바닐라" + "\n마임꽁꽁"+ "\n라프라스"+"\n빙큐보", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 56) {
@@ -757,7 +760,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n찌르성게" + "\n전툴라"+ "\n토게데마루", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 57) {
@@ -768,7 +771,7 @@ exports.run = (client, message, args) => {
                 { name: '위치', value: `\n${field14}`},
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 58) {
@@ -781,7 +784,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n백솜모카" + "\n너트령"+ "\n로즈레이드"+"\n단지래플", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 59) {
@@ -794,7 +797,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n백솜모카" + "\n엘풍"+ "\n로파파", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 60) {
@@ -807,7 +810,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n스트린더" + "\n스컹탱크"+ "\n또도가스(가라르)"+"\n염뉴트", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 61) {
@@ -820,7 +823,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n네이티오" + "\n루차불"+ "\n아머까오"+"\n딜리버드", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 62) {
@@ -833,7 +836,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n가디안" + "\n토게키스"+ "\n오롱털", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 63) {
@@ -846,7 +849,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n포푸니라" + "\n버랜지나"+ "\n가로막구리"+ "\n마기라스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 64) {
@@ -859,7 +862,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n미끄래곤" + "\n드래런치"+ "\n드래펄트", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 65) {
@@ -872,7 +875,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n하랑우탄" + "\n에써르(암컷)"+ "\n이브이"+"\n잠만보", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 66) {
@@ -885,7 +888,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "메타몽", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 67) {
@@ -898,7 +901,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n해무기" + "\n만타인"+ "\n라프라스"+"\n샤미드", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 68) {
@@ -911,7 +914,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n칼라마네로" + "\n마임꽁꽁"+ "\n브리무음"+"\n에브이", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 69) {
@@ -924,7 +927,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n절각참" + "\n칼라마네로"+ "\n가로막구리"+"\n블래키", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 70) {
@@ -937,7 +940,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n백솜모카" + "\n달코퀸"+ "\n엘풍"+"\n리피아", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 71) {
@@ -950,7 +953,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n나인테일" + "\n윈디"+ "\n샹델라"+"\n부스터", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 72) {
@@ -963,7 +966,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n일레도리자드" + "\n피카츄"+ "\n쥬피썬더", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 73) {
@@ -976,7 +979,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n배바닐라" + "\n마임꽁꽁"+ "\n눈여아"+"\n글레이시아", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 74) {
@@ -989,7 +992,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n가디안" + "\n오롱털"+ "\n토게키스"+"\n님피아", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 75) {
@@ -1002,7 +1005,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n침바루" + "\n누오"+ "\n깨비물거미"+"\n갸라도스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 76) {
@@ -1015,7 +1018,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n침바루" + "\n대포무노"+ "\n고래왕"+"\n만타인", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 77) {
@@ -1028,7 +1031,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n윈디" + "\n염뉴트"+ "\n다태우지네"+"\n리자몽(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 78) {
@@ -1041,7 +1044,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n갸라도스" + "\n트리토돈"+ "\n갈가부기(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 79) {
@@ -1054,7 +1057,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n백솜모카" + "\n너트령"+ "\n로즈레이드"+"\n단지래플(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 80) {
@@ -1067,7 +1070,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n윈디" + "\n샹델라"+ "\n석탄산"+"\n다태우지네(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 81) {
@@ -1080,7 +1083,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n포트데스" + "\n산호르곤"+ "\n팬텀(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 82) {
@@ -1093,7 +1096,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n가디안" + "\n토게키스"+ "\n오롱털"+"\n마휘핑(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 83) {
@@ -1106,7 +1109,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n배바닐라" + "\n마임꽁꽁"+ "\n라프라스(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 84) {
@@ -1119,7 +1122,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n절각참" + "\n강철톤"+ "\n기기기어르"+"\n두랄루돈(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 85) {
@@ -1132,7 +1135,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n절각참" + "\n메더(가라르)"+ "\n두랄루돈"+"\n대왕끼리동(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 86) {
@@ -1145,7 +1148,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n스컹탱크" + "\n또도가스(가라르)"+ "\n염뉴트"+"\n더스트나(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 87) {
@@ -1158,7 +1161,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n가디안" + "\n오롱털"+ "\n토게키스"+"\n브리무음(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 88) {
@@ -1171,7 +1174,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n부란다" + "\n버랜지나"+ "\n마기라스"+"\n오롱털(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 89) {
@@ -1184,7 +1187,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n네이티오" + "\n루차불"+ "\n심보러"+"\n아머까오(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 90) {
@@ -1197,7 +1200,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n깨비물거미" + "\n어지리더"+ "\n버터플(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 91) {
@@ -1210,7 +1213,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n해무기" + "\n갸라도스"+ "\n라프라스"+"\n킹크랩(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 92) {
@@ -1223,7 +1226,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n깨비물거미" + "\n어지리더"+"\n이올브(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }    if (args == 93) {
@@ -1236,7 +1239,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1250,7 +1253,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n이어롭" + "\n푸크린"+ "\n노고치"+"\n바랜드", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1264,7 +1267,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1278,7 +1281,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n밀탱크" + "\n버프론"+ "\n켄타로스"+"\n폭음룡"+"\n내룸벨트", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1292,7 +1295,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1306,7 +1309,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n사다이사" + "\n고지"+ "\n텅구리"+"\n악비아르"+"\n캥카", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1320,7 +1323,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1334,7 +1337,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n데덴네" + "\n레어코일"+ "\n찌르성게"+"\n렌트라"+"\n자포코일", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1348,7 +1351,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1362,7 +1365,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n버랜지나" + "\n에몽가"+ "\n맘박쥐"+"\n파이어로", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1376,7 +1379,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1390,7 +1393,7 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "\n스라크" + "\n헤라크로스"+ "\n이올브"+"\n핫삼", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1404,21 +1407,21 @@ exports.run = (client, message, args) => {
                 { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
     if (args == 111) {
         const Embed = new Discord.MessageEmbed()
-            .setColor('#C13EDD')
-            .setTitle(`굴 ${args}번 (레어)`)
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
             .addFields(
-                { name: '위치', value: `\n${field11}`},
-                { name: '소드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
-                { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
+                { name: '위치', value: `\n${field3}`+`\n${field22}`+`\n${field19}`+`\n${field21}`},
+                { name: '소드', value: "\n드레디어" + "\n라란티스"+ "\n뽀록나"+"\n덩쿠림보", inline: true },
+                { name: '실드', value: "\n드레디어" + "\n라란티스"+ "\n뽀록나"+"\n덩쿠림보", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1427,26 +1430,26 @@ exports.run = (client, message, args) => {
             .setColor('#C13EDD')
             .setTitle(`굴 ${args}번 (레어)`)
             .addFields(
-                { name: '위치', value: `\n${field11}`},
-                { name: '소드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
-                { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
+                { name: '위치', value: `\n${field3}`+`\n${field22}`+`\n${field19}`+`\n${field21}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
     if (args == 113) {
         const Embed = new Discord.MessageEmbed()
-            .setColor('#C13EDD')
-            .setTitle(`굴 ${args}번 (레어)`)
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
             .addFields(
-                { name: '위치', value: `\n${field11}`},
-                { name: '소드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
-                { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
+                { name: '위치', value: `\n${field3}`+`\n${field30}`+`\n${field24}`+`\n${field25}`},
+                { name: '소드', value: "\n코터스" + "\n파이어로"+ "\n염뉴트"+"\n불카모스", inline: true },
+                { name: '실드', value: "\n코터스" + "\n파이어로"+ "\n염뉴트"+"\n불카모스", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
@@ -1455,28 +1458,590 @@ exports.run = (client, message, args) => {
             .setColor('#C13EDD')
             .setTitle(`굴 ${args}번 (레어)`)
             .addFields(
-                { name: '위치', value: `\n${field11}`},
-                { name: '소드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
-                { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
+                { name: '위치', value: `\n${field3}`+`\n${field30}`+`\n${field24}`+`\n${field25}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
     if (args == 115) {
         const Embed = new Discord.MessageEmbed()
-            .setColor('#C13EDD')
-            .setTitle(`굴 ${args}번 (레어)`)
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
             .addFields(
-                { name: '위치', value: `\n${field11}`},
-                { name: '소드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
-                { name: '실드', value: "\n트리토돈" + "\n두빅굴"+ "\n거대코뿌리"+"\n사다이사(거다이맥스)", inline: true },
+                { name: '위치', value: `\n${field3}`+`\n${field22}`+`\n${field25}`},
+                { name: '소드', value: "\n코뿌리" + "\n기가이어스"+ "\n암팰리스"+"\n루가루암(한낮의 모습)"+ "\n거대코뿌리", inline: true },
+                { name: '실드', value: "\n코뿌리" + "\n기가이어스"+ "\n암팰리스"+"\n루가루암(한밤중의 모습)"+ "\n거대코뿌리", inline: true },
             )
             .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
-            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pictures/den${args}.png`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
             .setFooter(footerCred);       
         message.channel.send(Embed).catch(console.error);
     }
-    
+    if (args == 116) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field22}`+`\n${field25}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 117) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field22}`+`\n${field24}`+`\n${field20}`},
+                { name: '소드', value: "\n나시" + "\n가디안"+ "\n후딘"+"\n아쿠스타", inline: true },
+                { name: '실드', value: "\n나시" + "\n가디안"+ "\n후딘"+"\n아쿠스타", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 118) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field22}`+`\n${field24}`+`\n${field20}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 119) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field26}`+`\n${field22}`+`\n${field20}`},
+                { name: '소드', value: "\n드래피온" + "\n독파리"+ "\n펜드라", inline: true },
+                { name: '실드', value: "\n드래피온" + "\n독파리"+ "\n펜드라", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 120) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field26}`+`\n${field22}`+`\n${field20}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 121) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field28}`+`\n${field27}`+`\n${field29}`},
+                { name: '소드', value: "\n드래피온" + "\n절각참"+ "\n칼라마네로"+ "\n샤크니아"+ "\n조로아크", inline: true },
+                { name: '실드', value: "\n드래피온" + "\n절각참"+ "\n칼라마네로"+ "\n샤크니아"+ "\n조로아크", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 122) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field28}`+`\n${field27}`+`\n${field29}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 123) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field24}`+`\n${field28}`+`\n${field27}`},
+                { name: '소드', value: "\n비조도" + "\n곤율거니"+ "\n케오퍼스", inline: true },
+                { name: '실드', value: "\n비조도" + "\n독개굴"+ "\n케오퍼스", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 124) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field24}`+`\n${field28}`+`\n${field27}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 125) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field26}`+`\n${field19}`+`\n${field21}`},
+                { name: '소드', value: "\n클레피" + "\n마릴리"+ "\n푸크린"+ "\n가디안"+ "\n큐아링", inline: true },
+                { name: '실드', value: "\n클레피" + "\n마릴리"+ "\n푸크린"+ "\n가디안"+ "\n큐아링", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 126) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field26}`+`\n${field19}`+`\n${field21}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.png`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 127) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field23}`+`\n${field20}`+`\n${field24}`},
+                { name: '소드', value: "\n모래성이당" + "\n탱탱겔"+ "\n둥실라이드"+ "\n텅구리", inline: true },
+                { name: '실드', value: "\n모래성이당" + "\n탱탱겔"+ "\n둥실라이드"+ "\n텅구리", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 128) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field23}`+`\n${field20}`+`\n${field24}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 129) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field23}`+`\n${field20}`+`\n${field31}`},
+                { name: '소드', value: "\n레어코일" + "\n클레피"+ "\n절각참"+ "\n자포코일"+ "\n무장조", inline: true },
+                { name: '실드', value: "\n레어코일" + "\n클레피"+ "\n절각참"+ "\n자포코일"+ "\n무장조", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 130) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field23}`+`\n${field20}`+`\n${field31}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 131) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field30}`+`\n${field29}`+`\n${field27}`},
+                { name: '소드', value: "\n크리만" + "\n갸라도스"+ "\n애프룡"+ "\n킹드라"+ "\n짜랑고우거", inline: true },
+                { name: '실드', value: "\n크리만" + "\n갸라도스"+ "\n단지래플"+ "\n킹드라"+ "\n미끄래곤", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 132) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field29}`+`\n${field27}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 133) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field3}`+`\n${field23}`},
+                { name: '소드', value: "\n왕콘치" + "\n가재장군"+ "\n누오"+ "\n강챙이"+ "\n왕구리", inline: true },
+                { name: '실드', value: "\n왕콘치" + "\n가재장군"+ "\n누오"+ "\n강챙이"+ "\n왕구리", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 134) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field3}`+`\n${field23}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 135) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field26}`+`\n${field24}`+`\n${field23}`},
+                { name: '소드', value: "\n골덕" + "\n꼬치조"+ "\n갈가부기"+ "\n메깅"+ "\n골덕", inline: true },
+                { name: '실드', value: "\n골덕" + "\n꼬치조"+ "\n갈가부기"+ "\n메깅"+ "\n골덕", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 136) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field19}`+`\n${field26}`+`\n${field24}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 137) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field24}`+`\n${field30}`+`\n${field21}`},
+                { name: '소드', value: "\n대포무노" + "\n만타인"+ "\n킹크랩"+ "\n파르셀"+ "\n독파리", inline: true },
+                { name: '실드', value: "\n대포무노" + "\n만타인"+ "\n킹크랩"+ "\n파르셀"+ "\n독파리", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 138) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field3}`+`\n${field24}`+`\n${field30}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 139) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `\n${field29}`+`\n${field27}`+`\n${field20}`+`\n${field21}`},
+                { name: '소드', value: "\n고래왕" + "\n랜턴"+ "\n아쿠스타"+ "\n샤크니아", inline: true },
+                { name: '실드', value: "\n고래왕" + "\n랜턴"+ "\n아쿠스타"+ "\n드래캄" +"\n샤크니아", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 140) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field29}`+`\n${field27}`+`\n${field20}`+`\n${field21}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 143) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `${field32}`},
+                { name: '소드', value: "비퀸", inline: true },
+                { name: '실드', value: "비퀸", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 144) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field32}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 145) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field26}`+`\n${field22}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 146) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `\n${field29}`+`\n${field20}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 147) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field21}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 148) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field23}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 149) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field22}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 150) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field25}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 151) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field30}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 152) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `${field29}`},
+                { name: '소드', value: "메타몽", inline: true },
+                { name: '실드', value: "메타몽", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 153) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field29}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 154) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `${field22}`+`${field26}`},
+                { name: '소드', value: "\n나시"+"\n뽀록나"+"\n라란티스"+"\n덩쿠림보"+"\n이상해꽃", inline: true },
+                { name: '실드', value: "\n나시"+"\n뽀록나"+"\n라란티스"+"\n덩쿠림보"+"\n이상해꽃", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 155) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `${field20}`+`${field29}`},
+                { name: '소드', value: "\n독파리"+"\n갸라도스"+"\n아쿠스타"+"\n거북왕"+"\n파르셀", inline: true },
+                { name: '실드', value: "\n독파리"+"\n갸라도스"+"\n아쿠스타"+"\n거북왕"+"\n파르셀", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 156) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#EC001C')
+            .setTitle(`굴 ${args}번 (일반)`)
+            .addFields(
+                { name: '위치', value: `${field28}`},
+                { name: '소드', value: "\n루가루암(한낮의 모습)"+"\n루가루암(한밤중의 모습)"+"\n루가루암(황혼의 모습)", inline: true },
+                { name: '실드', value: "\n루가루암(한낮의 모습)"+"\n루가루암(한밤중의 모습)"+"\n루가루암(황혼의 모습)", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args == 157) {
+        const Embed = new Discord.MessageEmbed()
+            .setColor('#C13EDD')
+            .setTitle(`굴 ${args}번 (레어)`)
+            .addFields(
+                { name: '위치', value: `${field28}`},
+                { name: '소드', value: "모든 포켓몬", inline: true },
+                { name: '실드', value: "모든 포켓몬", inline: true },
+            )
+            .setURL(`https://www.serebii.net/swordshield/maxraidbattles/den${args}.shtml`)
+            .setImage(`https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den${args}.PNG`)
+            .setFooter(footerCred);       
+        message.channel.send(Embed).catch(console.error);
+    }
+    if (args > 157 || args == 94 || args == 95 || args == 96 || args == 97 || args == 98 || args == 141 || args == 142){
+        message.channel.send("굴이 존재하지 않습니다").catch(console.error);
+    }
 };
