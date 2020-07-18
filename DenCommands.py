@@ -4,7 +4,7 @@ import json
 
 with open('dens.json', encoding='utf-8') as denpoke:
     data = json.load(denpoke)
-
+    
 class DenCommands(commands.Cog):
 
     def __init__(self, bot):
@@ -12,6 +12,7 @@ class DenCommands(commands.Cog):
 
     @commands.command(name='굴', description='The embed command')
     async def command(self, ctx, args):
+        
         if args.isdigit():
             a = int(args)
             if a <= 93:
@@ -49,14 +50,66 @@ class DenCommands(commands.Cog):
                     color = 0xff0a0a
                 else:
                     color = 0xfb0fff
-
                 embed = discord.Embed(title="굴 {}번".format(args), url="https://www.serebii.net/swordshield/maxraidbattles/den" + args + ".shtml", color=color)
                 embed.add_field(name="소드", value="{}".format(swordpoke), inline=True)
                 embed.add_field(name="실드", value="{}".format(shieldpoke), inline=True)
                 embed.set_footer(text="Made by 거북손데스")
                 embed.set_image(url='https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den{}.png'.format(args))
                 await ctx.channel.send(embed=embed)
+ 
+        else:
+            swname1 = []
+            shname1 = []
+            swordden = []
+            shieldden = []
+            i3 = 0
+            i4 = 0
+            i5 = 0
+            datalength = len(data)
+            while i3 < datalength:
+                searchdata1 = data[i3]
+                sword1 = searchdata1['소드']
+                shield1 = searchdata1['실드']
+                swordlength1 = len(sword1)
+                shieldlength1 = len(shield1)
+                while i4 < swordlength1:
+                    swordinfo1 = sword1[i4]
+                    swordname1 = swordinfo1['이름']
+                    if swordname1 == args:
+                        swname1.append(swordname1)
+                        swordden.append(i3 + 1)
+                    if swordname1 == args + "(거다이맥스)":
+                        swname1.append(swordname1)
+                        swordden.append(i3 + 1)
+                    i4 += 1
+                while i5 < shieldlength1:
+                    shieldinfo1 = shield1[i5]
+                    shieldname1 = shieldinfo1['이름']
+                    if shieldname1 == args:
+                        shname1.append(shieldname1)
+                        shieldden.append(i3 + 1)
+                    if shieldname1 == args + "(거다이맥스)":
+                        shname1.append(shieldname1)
+                        shieldden.append(i3 + 1)
+                    i5 += 1
+                i4 = 0
+                i5 = 0
+                i3 += 1
+            shnew1 = set(shieldden)
+            shieldend1 = list(shnew1)
+            shieldend1.sort()
+            ShieldDen = ','.join(str(Dennumber) for Dennumber in shieldend1)
+            swnew1 = set(swordden)
+            swordend1 = list(swnew1)
+            swordend1.sort()
+            SwordDen = ','.join(str(Dennumber) for Dennumber in swordend1)
+            embed = discord.Embed(title="{} 굴".format(args), color=0xff0a0a)
+            embed.add_field(name="소드", value="굴번호: {}".replace('{}',SwordDen), inline=True)
+            embed.add_field(name="실드", value="굴번호: {}".replace('{}',ShieldDen), inline=False)
+            embed.set_footer(text="Made by 거북손데스")
+            if SwordDen=='' and ShieldDen=='':
+                await ctx.channel.send("잘못 입력하셨습니다")
             else:
-                await ctx.send("추가중입니다")
+                await ctx.channel.send(embed=embed)
 def setup(bot):
     bot.add_cog(DenCommands(bot))
