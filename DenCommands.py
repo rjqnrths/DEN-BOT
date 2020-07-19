@@ -4,18 +4,18 @@ import json
 
 with open('dens.json', encoding='utf-8') as denpoke:
     data = json.load(denpoke)
-    
+
 class DenCommands(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='굴', description='The embed command')
+    @commands.command(name='굴')
     async def command(self, ctx, args):
-        
+        print(args)  
         if args.isdigit():
             a = int(args)
-            if a <= 93:
+            if a <= 125:
                 swname = []
                 shname = []
                 i = 0
@@ -50,12 +50,18 @@ class DenCommands(commands.Cog):
                     color = 0xff0a0a
                 else:
                     color = 0xfb0fff
-                embed = discord.Embed(title="굴 {}번".format(args), url="https://www.serebii.net/swordshield/maxraidbattles/den" + args + ".shtml", color=color)
-                embed.add_field(name="소드", value="{}".format(swordpoke), inline=True)
-                embed.add_field(name="실드", value="{}".format(shieldpoke), inline=True)
-                embed.set_footer(text="Made by 거북손데스")
-                embed.set_image(url='https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den{}.png'.format(args))
-                await ctx.channel.send(embed=embed)
+                if swordpoke.find("없음")!=-1:
+                     await ctx.channel.send("아직 추가되지않은 굴입니다")
+                else:
+                    embed = discord.Embed(title="굴 {}번".format(args), url="https://www.serebii.net/swordshield/maxraidbattles/den" + args + ".shtml", color=color)
+                    embed.add_field(name="소드", value="{}".format(swordpoke), inline=True)
+                    embed.add_field(name="실드", value="{}".format(shieldpoke), inline=True)
+                    embed.set_footer(text="Made by 거북손데스")
+                    embed.set_image(url='https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den{}.png'.format(args))
+                    await ctx.channel.send(embed=embed)
+            else:
+                if a>125 :
+                    await ctx.channel.send("잘못 입력하셨거나 아직 추가하지않은 포켓몬입니다")
  
         else:
             swname1 = []
@@ -78,7 +84,7 @@ class DenCommands(commands.Cog):
                     if swordname1 == args:
                         swname1.append(swordname1)
                         swordden.append(i3 + 1)
-                    if swordname1 == args + "(거다이맥스)":
+                    if swordname1 == args + "(거다이맥스)" or swordname1 == args + "(수컷)" or swordname1 == args + "(한낮의모습)" or swordname1 == args + "(황혼)" or swordname1 == args + "(가라르)":
                         swname1.append(swordname1)
                         swordden.append(i3 + 1)
                     i4 += 1
@@ -88,7 +94,7 @@ class DenCommands(commands.Cog):
                     if shieldname1 == args:
                         shname1.append(shieldname1)
                         shieldden.append(i3 + 1)
-                    if shieldname1 == args + "(거다이맥스)":
+                    if shieldname1 == args + "(거다이맥스)" or shieldname1 == args + "(암컷)" or shieldname1 == args + "(한밤중의모습)" or shieldname1 == args + "(황혼)" or shieldname1 == args + "(가라르)":
                         shname1.append(shieldname1)
                         shieldden.append(i3 + 1)
                     i5 += 1
@@ -104,11 +110,12 @@ class DenCommands(commands.Cog):
             swordend1.sort()
             SwordDen = ','.join(str(Dennumber) for Dennumber in swordend1)
             embed = discord.Embed(title="{} 굴".format(args), color=0xff0a0a)
+            embed.set_thumbnail(url="https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pokemon/alcremie-gigantamax.gif")
             embed.add_field(name="소드", value="굴번호: {}".replace('{}',SwordDen), inline=True)
             embed.add_field(name="실드", value="굴번호: {}".replace('{}',ShieldDen), inline=False)
             embed.set_footer(text="Made by 거북손데스")
             if SwordDen=='' and ShieldDen=='':
-                await ctx.channel.send("잘못 입력하셨습니다")
+                await ctx.channel.send("잘못 입력하셨거나 아직 추가하지않은 포켓몬입니다")
             else:
                 await ctx.channel.send(embed=embed)
 def setup(bot):
