@@ -9,13 +9,14 @@ class DenCommands(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
+    
 
     @commands.command(name='굴')
-    async def command(self, ctx, args):
-        print(args)  
+    async def command(self, ctx,*,args):
+        print(args)
         if args.isdigit():
             a = int(args)
-            if a <= 125:
+            if a <= 157:
                 swname = []
                 shname = []
                 i = 0
@@ -46,22 +47,23 @@ class DenCommands(commands.Cog):
                 swnew = set(swname)
                 swordend = list(swnew)
                 swordpoke = "\n".join(swordend)
-                if a<43:
+                if a<43 or 93 < a < 144 and a%2==1 or a == 152 or a == 154 or a == 155 or a == 156:
                     color = 0xff0a0a
                 else:
                     color = 0xfb0fff
                 if swordpoke.find("없음")!=-1:
-                     await ctx.channel.send("아직 추가되지않은 굴입니다")
+                     await ctx.channel.send("```94,95,96,97,98,141,142번 굴은 소드실드에 없는굴입니다```")
                 else:
                     embed = discord.Embed(title="굴 {}번".format(args), url="https://www.serebii.net/swordshield/maxraidbattles/den" + args + ".shtml", color=color)
                     embed.add_field(name="소드", value="{}".format(swordpoke), inline=True)
                     embed.add_field(name="실드", value="{}".format(shieldpoke), inline=True)
                     embed.set_footer(text="Made by 거북손데스")
-                    embed.set_image(url='https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/image/den{}.png'.format(args))
+                    embed.set_image(url='https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/denImages/den{}.png'.format(args))
                     await ctx.channel.send(embed=embed)
             else:
-                if a>125 :
-                    await ctx.channel.send("잘못 입력하셨거나 아직 추가하지않은 포켓몬입니다")
+                if a>157 :
+                    await ctx.channel.send("\n```94,95,96,97,98,141,142번 굴은 없고" +
+                    "\n157번까지 존재합니다```")
  
         else:
             swname1 = []
@@ -110,13 +112,14 @@ class DenCommands(commands.Cog):
             swordend1.sort()
             SwordDen = ','.join(str(Dennumber) for Dennumber in swordend1)
             embed = discord.Embed(title="{} 굴".format(args), color=0xff0a0a)
-            embed.set_thumbnail(url="https://raw.githubusercontent.com/rjqnrths/DEN-BOT/master/pokemon/alcremie-gigantamax.gif")
+            embed.set_thumbnail(url="https://github.com/rjqnrths/DEN-BOT/blob/master/pokemon/barbaracle.gif?raw=true")
             embed.add_field(name="소드", value="굴번호: {}".replace('{}',SwordDen), inline=True)
             embed.add_field(name="실드", value="굴번호: {}".replace('{}',ShieldDen), inline=False)
             embed.set_footer(text="Made by 거북손데스")
-            if SwordDen=='' and ShieldDen=='':
-                await ctx.channel.send("잘못 입력하셨거나 아직 추가하지않은 포켓몬입니다")
+            if SwordDen=='' and ShieldDen=='' or args=='없음':
+                await ctx.channel.send("포켓몬이름을 정확하게 입력해주세요")
             else:
                 await ctx.channel.send(embed=embed)
+            
 def setup(bot):
     bot.add_cog(DenCommands(bot))
