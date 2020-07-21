@@ -8,8 +8,9 @@ import os
 client = commands.Bot(command_prefix='$')
 client.remove_command('help')
 
-extensions = ['DenCommands','help']
+TOKEN = '토큰'
 
+extensions = ['DenCommands','help']
 
 @client.event
 async def on_ready():
