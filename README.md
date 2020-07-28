@@ -1,4 +1,10 @@
 # Den-bot
-I don't know well, but I try
-It's korean den bot 
-i write all dens
+포켓몬 굴 정보를 보여주는봇
+$굴 이름 or 굴번호를 적으면 굴을 보여줍니다
+ex) $굴 1 or $굴 팬텀
+폼 이름
+그냥 이름을 쳐도되고 더 정확하게 검색하고싶으면
+뒤에 ()붙이고 안에 폼이름을 적어주면됩니다
+ex) $굴 팬텀(거다이맥스) or $굴 에써르(암컷)
+명령어를 잘 모르겠으면
+$도움말
