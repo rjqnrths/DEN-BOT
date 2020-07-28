@@ -4,13 +4,13 @@ import asyncio
 import sys
 import os
 
+TOKEN = '토큰'
 
 client = commands.Bot(command_prefix='$')
 client.remove_command('help')
 
-TOKEN = '토큰'
-
 extensions = ['DenCommands','help']
+
 
 @client.event
 async def on_ready():
@@ -23,21 +23,19 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    channel = message.channel
-    if message.guild is None:
-        await message.channel.send("여기는 명령어를 할수없습니다")
-    else:
-        await client.process_commands(message)
-
+    await client.process_commands(message)
+    # print(message.author)
+    # print(message.content)
+    
 @client.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("굴번호나 포켓몬이름을 넣어주세요")
+        await ctx.send("```굴번호나 포켓몬이름을 넣어주세요```")
         print(error)
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("없는명령어입니다 명령어를 모르시겠다면 $도움말을 쳐보세요")
+        await ctx.send("```없는명령어입니다\n" + "$도움말을 쳐보세요```")
         print(error)
-
+        
 @client.command()
 async def load(ctx, extension):
     try:
@@ -68,5 +66,5 @@ async def unload(ctx, extension):
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
-
-client.run(TOKEN)
+        
+        client.run(TOKEN)

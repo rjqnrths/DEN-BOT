@@ -13,7 +13,6 @@ class DenCommands(commands.Cog):
 
     @commands.command(name='굴')
     async def command(self, ctx,*,args):
-        print(args)
         if args.isdigit():
             a = int(args)
             if a <= 157:
@@ -51,9 +50,15 @@ class DenCommands(commands.Cog):
                     color = 0xff0a0a
                 else:
                     color = 0xfb0fff
-                if swordpoke.find("없음")!=-1:
-                     await ctx.channel.send("```94,95,96,97,98,141,142번 굴은 소드실드에 없는굴입니다```")
+                if swordpoke.find("없음")!=-1 or shieldpoke.find("없음")!=-1 :
+                     await ctx.channel.send("```python\n94,95,96,97,98,141,142번 굴은 소드실드에 없는굴입니다```")
                 else:
+                    if len(swordpoke)==0 or len(shieldpoke)==0 :
+                        swordpoke= "".join("없음")
+                        shieldpoke="".join("없음")
+                    if 99 < a < 144 and a%2==0 or 144< a <152 or a==153 or a==157:
+                        swordpoke="모든포켓몬"
+                        shieldpoke="모든포켓몬"
                     embed = discord.Embed(title="굴 {}번".format(args), url="https://www.serebii.net/swordshield/maxraidbattles/den" + args + ".shtml", color=color)
                     embed.add_field(name="소드", value="{}".format(swordpoke), inline=True)
                     embed.add_field(name="실드", value="{}".format(shieldpoke), inline=True)
@@ -62,7 +67,7 @@ class DenCommands(commands.Cog):
                     await ctx.channel.send(embed=embed)
             else:
                 if a>157 :
-                    await ctx.channel.send("\n```94,95,96,97,98,141,142번 굴은 없고" +
+                    await ctx.channel.send("```python\n94,95,96,97,98,141,142번 굴은 없고" +
                     "\n157번까지 존재합니다```")
  
         else:
@@ -70,9 +75,17 @@ class DenCommands(commands.Cog):
             shname1 = []
             swordden = []
             shieldden = []
+            Swordlist = []
+            Swordlist1 =[]
+            Swordlist2 = []
+            Shieldlist = []
+            Shieldlist1 = []
+            Shieldlist2 = []
             i3 = 0
             i4 = 0
             i5 = 0
+            i6 = 0
+            i7 = 0
             datalength = len(data)
             while i3 < datalength:
                 searchdata1 = data[i3]
@@ -106,20 +119,63 @@ class DenCommands(commands.Cog):
             shnew1 = set(shieldden)
             shieldend1 = list(shnew1)
             shieldend1.sort()
-            ShieldDen = ','.join(str(Dennumber) for Dennumber in shieldend1)
             swnew1 = set(swordden)
             swordend1 = list(swnew1)
             swordend1.sort()
-            SwordDen = ','.join(str(Dennumber) for Dennumber in swordend1)
+            swordlength2=len(swordend1)
+            shieldlength2=len(shieldend1)
+            while swordlength2 > i6:
+                SwordUrl = f'[{swordend1[i6]}](https://www.serebii.net/swordshield/maxraidbattles/den{swordend1[i6]}.shtml)'
+                if len(Swordlist) < 14:
+                    Swordlist.append(SwordUrl)
+                elif len(Swordlist1) < 14:
+                    Swordlist1.append(SwordUrl)
+                else:
+                    Swordlist2.append(SwordUrl)
+
+                SwordUrl1 = ','.join(str(Dennumber1) for Dennumber1 in Swordlist)
+                SwordUrl2 = ','.join(str(Dennumber2) for Dennumber2 in Swordlist1)
+                SwordUrl3 = ','.join(str(Dennumber3) for Dennumber3 in Swordlist2)
+                i6+=1
+
+            while shieldlength2 > i7:
+                ShieldUrl = f'[{shieldend1[i7]}](https://www.serebii.net/swordshield/maxraidbattles/den{shieldend1[i7]}.shtml)'
+                if len(Shieldlist) < 14:
+                    Shieldlist.append(ShieldUrl)
+                elif len(Shieldlist1) < 14:
+                    Shieldlist1.append(ShieldUrl)
+                else:
+                    Shieldlist2.append(ShieldUrl)
+
+                ShieldUrl1 = ','.join(str(Dennumber4) for Dennumber4 in Shieldlist)
+                ShieldUrl2 = ','.join(str(Dennumber5) for Dennumber5 in Shieldlist1)
+                ShieldUrl3 = ','.join(str(Dennumber6) for Dennumber6 in Shieldlist2)
+                i7+=1
+            if shieldlength2==0:
+                ShieldUrl1="없음"
+            if swordlength2==0:
+                SwordUrl1="없음"
             embed = discord.Embed(title="{} 굴".format(args), color=0xff0a0a)
             embed.set_thumbnail(url="https://github.com/rjqnrths/DEN-BOT/blob/master/pokemon/barbaracle.gif?raw=true")
-            embed.add_field(name="소드", value="굴번호: {}".replace('{}',SwordDen), inline=True)
-            embed.add_field(name="실드", value="굴번호: {}".replace('{}',ShieldDen), inline=False)
+            embed.add_field(name="소드", value=f"{SwordUrl1}")
+            if len(Swordlist1) > 0:
+                embed.add_field(name="** **", value=f"{SwordUrl2}",inline=False)
+            if len(Swordlist2) > 0:
+                embed.add_field(name="** **", value=f"{SwordUrl3}",inline=False)
+
+            embed.add_field(name="실드", value=f"{ShieldUrl1}",inline=False)
+            if len(Shieldlist1) > 0:
+                embed.add_field(name="** **", value=f"{ShieldUrl2}",inline=False)
+            if len(Shieldlist2) > 0:
+                embed.add_field(name="** **", value=f"{ShieldUrl3}",inline=False)
+
             embed.set_footer(text="Made by 거북손데스")
-            if SwordDen=='' and ShieldDen=='' or args=='없음':
-                await ctx.channel.send("포켓몬이름을 정확하게 입력해주세요")
-            else:
+            
+            if ShieldUrl1=='없음' and SwordUrl1=='없음' or args=='없음':
+                await ctx.channel.send("```포켓몬이름을 정확하게 입력해주세요```")
+            else:         
                 await ctx.channel.send(embed=embed)
             
 def setup(bot):
+
     bot.add_cog(DenCommands(bot))
